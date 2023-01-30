@@ -1,8 +1,9 @@
-const button = document.querySelector('#button');
+// const button = document.querySelector('#button');
 
-button.addEventListener('click', () => changeButton(button));
+// button.addEventListener('click', () => changeButton(button));
 
 function changeButton(id) {
-  id.innerHTML = 'Hello from Vanilla JS';
-  id.className = 'green-btn';
+  const button = document.querySelector(id);
+  button.innerHTML = 'Hello from Vanilla JS';
+  button.className = 'green-btn';
 }
